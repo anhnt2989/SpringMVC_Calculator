@@ -43,8 +43,6 @@ public class CalculatorController {
                 }
                 break;
         }
-        ModelAndView modelAndView = new ModelAndView("index");
-        return modelAndView;
+        return new ModelAndView("index");
     }
-
 }
