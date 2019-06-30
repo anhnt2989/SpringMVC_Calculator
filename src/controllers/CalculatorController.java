@@ -23,15 +23,15 @@ public class CalculatorController {
         switch (operator) {
             case "+":
                 result = Float.parseFloat(arg1) + Float.parseFloat(arg2);
-                model.addAttribute("result", result);
+                model.addAttribute("result", "Result Addition : " + result);
                 break;
             case "-":
                 result = Float.parseFloat(arg1) - Float.parseFloat(arg2);
-                model.addAttribute("result", result);
+                model.addAttribute("result","Result Substraction : " + result);
                 break;
             case "x":
                 result = Float.parseFloat(arg1) * Float.parseFloat(arg2);
-                model.addAttribute("result", result);
+                model.addAttribute("result", "Result Multiplication : " + result);
                 break;
             case "/":
                 if (Float.parseFloat(arg2) == 0) {
@@ -39,7 +39,7 @@ public class CalculatorController {
                     break;
                 } else {
                     result = Float.parseFloat(arg1) / Float.parseFloat(arg2);
-                    model.addAttribute("result", result);
+                    model.addAttribute("result", "Result Division : " + result);
                 }
                 break;
         }
