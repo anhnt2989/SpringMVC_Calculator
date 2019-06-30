@@ -12,8 +12,7 @@ public class CalculatorController {
 
     @GetMapping
     public ModelAndView welcome() {
-        ModelAndView modelAndView = new ModelAndView("index");
-        return modelAndView;
+        return new ModelAndView("index");
     }
 
     @RequestMapping("/calculate")
