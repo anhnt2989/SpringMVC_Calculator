@@ -14,7 +14,6 @@
     #calculator {
         width: 600px;
         border: 1px solid blue;
-        text-align: center;
     }
 </style>
 <body>
@@ -29,7 +28,7 @@
         <button type="submit" value="x" name="operator">Multiplication(x)</button>
         <button type="submit" value="/" name="operator">Division(/)</button>
         <br><br>
-        <p>Result : ${result}</p>
+        <p>${result}</p>
     </fieldset>
 </form>
 
